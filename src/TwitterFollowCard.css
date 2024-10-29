@@ -29,4 +29,18 @@
 
 .tw-followCard-button {
     margin-left: 16px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    transition: .3s ease background-color;
+
+    &:hover {
+        background-color: #F60;
+    }
+
+    &.is-following:hover {
+        background-color: red;
+    }
 }

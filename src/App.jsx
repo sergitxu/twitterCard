@@ -6,14 +6,13 @@ export function App() {
         <section className="App">
             <TwitterFollowCard
                 userName="sergitxu"
-                name="Sergio Ortiz"
-                isFollowing
-            />
+                initialIsFollowing>
+                Sergio Ortiz
+            </TwitterFollowCard>
             <TwitterFollowCard
-                userName="midudev"
-                name="Miguel Ángel Durán"
-                isFollowing={false}
-            />
+                userName="midudev">
+                Miguel Ángel Durán
+            </TwitterFollowCard>
         </section>
     )
 }
