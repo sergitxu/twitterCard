@@ -40,7 +40,28 @@
         background-color: #F60;
     }
 
-    &.is-following:hover {
-        background-color: red;
+    &.is-following {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #bbb;
+        width: 140px;
+
+        &:hover {
+            background-color: rgba(255, 0, 0, 0.2);
+            color: red;
+            border: 1px solid red;
+
+            & .tw-followCard-stopFollow {
+                display: flex;
+            }
+
+            & .tw-followCard-follow {
+                display: none;
+            }
+        }
     }
+}
+
+.tw-followCard-stopFollow {
+    display: none;
 }
